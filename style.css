@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    background-color: rgba(0, 100, 200, 0.2);
+    padding: 1rem;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+.karte {
+    width: 20rem;
+    padding: 1rem;
+    border: 2px solid #333333;
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
