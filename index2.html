@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+</head>
+
+<body>
+
+    <h1>Formular</h1>
+
+    <form action="mailto:AK210524@spengergasse.at?subject=Formular"
+          method="post"
+          enctype="text/plain">
+
+        <!-- Texteingabe -->
+        <label for="name">Name:</label>
+        <input type="text"
+               id="name"
+               name="Name"
+               required>
+
+        <br><br>
+
+        <!-- Weiteres Eingabefeld -->
+        <label for="email">E-Mail:</label>
+        <input type="email"
+               id="email"
+               name="E-Mail"
+               required>
+
+        <br><br>
+
+        <!-- Radiobutton -->
+        <p>Geschlecht:</p>
+
+        <input type="radio"
+               id="maennlich"
+               name="Geschlecht"
+               value="Männlich"
+               required>
+
+        <label for="maennlich">Männlich</label>
+
+        <input type="radio"
+               id="weiblich"
+               name="Geschlecht"
+               value="Weiblich">
+
+        <label for="weiblich">Weiblich</label>
+
+        <input type="radio"
+               id="divers"
+               name="Geschlecht"
+               value="Divers">
+
+        <label for="divers">Divers</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <p>Welche Themen interessieren dich?</p>
+
+        <input type="checkbox"
+               id="html"
+               name="HTML"
+               value="Ja">
+
+        <label for="html">HTML</label>
+
+        <input type="checkbox"
+               id="css"
+               name="CSS"
+               value="Ja">
+
+        <label for="css">CSS</label>
+
+        <input type="checkbox"
+               id="javascript"
+               name="JavaScript"
+               value="Ja">
+
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="klasse">Klasse:</label>
+
+        <select id="klasse"
+                name="Klasse"
+                required>
+
+            <option value="">Bitte auswählen</option>
+            <option value="1AHIT">1AHIT</option>
+            <option value="2AHIT">2AHIT</option>
+            <option value="3AHIT">3AHIT</option>
+            <option value="4AHIT">4AHIT</option>
+            <option value="5AHIT">5AHIT</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Mehrfachauswahl -->
+        <label for="faecher">
+            Lieblingsfaecher:
+        </label>
+
+        <br>
+
+        <select id="faecher"
+                name="Lieblingsfaecher"
+                multiple
+                size="4">
+
+            <option value="WMC">WMC</option>
+            <option value="Mathematik">Mathematik</option>
+            <option value="Deutsch">Deutsch</option>
+            <option value="Englisch">Englisch</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Mehrzeiliges Textfeld -->
+        <label for="nachricht">
+            Nachricht:
+        </label>
+
+        <br>
+
+        <textarea id="nachricht"
+                  name="Nachricht"
+                  rows="6"
+                  cols="40"
+                  required></textarea>
+
+        <br><br>
+
+        <!-- weiteres Eingabefeld + Pattern -->
+        <label for="plz">
+            Postleitzahl:
+        </label>
+
+        <input type="text"
+               id="plz"
+               name="Postleitzahl"
+               pattern="[0-9]{4}"
+               placeholder="z.B. 1050"
+               required>
+
+        <br><br>
+
+        <input type="submit"
+               value="Absenden">
+
+        <input type="reset"
+               value="Zurücksetzen">
+
+    </form>
+
+</body>
+</html>
