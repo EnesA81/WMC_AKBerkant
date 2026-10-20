@@ -36,3 +36,45 @@ nav a {
 footer {
     margin-top: 2rem;
 }
+
+/* Hintergrund der Webseite */
+body {
+    background-color: lightblue;
+}
+
+/* Überschrift gestalten */
+h1 {
+    border: 3px solid blue;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* Boxen gestalten */
+.karte {
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 20px auto;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Navigation gestalten */
+nav {
+    padding: 15px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+/* Bild anpassen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mindesthöhe */
+main {
+    min-height: 50vh;
+}
