@@ -1,0 +1,32 @@
+/* Beispiel 3: CSS-Regeln zum vorgegebenen HTML */
+
+/* a) Sektionen mit passendem data-topic */
+article.testbereich section[data-topic^="css-adv"] {
+    border: 2px dashed red;
+}
+
+/* b) Der direkte Link im dritten Listeneintrag */
+article.testbereich section[data-topic^="css-adv"] li:nth-child(3) > a {
+    color: green;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+article.testbereich section[data-topic^="css-adv"] li:nth-child(3) > a:hover {
+    color: red;
+}
+
+/* c) Hauptgericht ist die dritte Tabellenzeile (mit Kopfzeile) */
+/* Zusammengefasste Rahmen machen den Rahmen an der Zeile sichtbar. */
+table.preise {
+    border-collapse: collapse;
+}
+
+table.preise tr:nth-child(3) {
+    background-color: #fff1b8;
+}
+
+/* Letzte Tabellenzeile */
+table.preise tr:last-child {
+    border-top: 2px solid #888888;
+}
